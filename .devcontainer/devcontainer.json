@@ -1,0 +1,18 @@
+{
+  "name": "Python 3",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13",
+  "postCreateCommand": "pip3 install --user -r requirements.txt && git config --local include.path ../.gitconfig",
+  "customizations": {
+      "vscode": {
+          "settings": {
+          },
+          "extensions": [
+              "ms-python.python",
+              "ms-python.vscode-pylance",
+              "ms-python.flake8",
+              "ms-vsliveshare.vsliveshare",
+              "ms-python.black-formatter"
+          ]
+      }
+  }
+}

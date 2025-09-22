@@ -6,8 +6,8 @@ which combines all elements to represent Scotland Yard games.
 
 class Game:
 
-    def __init__(self) -> None:
-        # TODO
+    def __init__(self,board : Board) -> None:
+        self.board = board
         pass
 
 

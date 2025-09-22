@@ -2,7 +2,12 @@
     "github.copilot.editor.enableCodeActions": false,
     "github.copilot.renameSuggestions.triggerAutomatically": false,
     "chat.commandCenter.enabled": false,
-    "github.copilot.enable": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
     "python.analysis.typeCheckingMode": "strict",
     "[python]": {
         "editor.folding": true,

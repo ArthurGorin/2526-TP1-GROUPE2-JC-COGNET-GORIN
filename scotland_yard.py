@@ -3,6 +3,13 @@ This module is the entry point of the application, defining the `Game` class,
 which combines all elements to represent Scotland Yard games.
 """
 
+import random
+from board import Board
+from player import Player
+import board_data
+import rules
+import move
+
 
 class Game:
 
@@ -11,6 +18,5 @@ class Game:
         self.players = players
 
 if __name__ == "__main__":
-    # TODO
-    pass
+    main()
 

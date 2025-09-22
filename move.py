@@ -2,8 +2,10 @@
 This module defines the different kinds of moves, for the different kinds of
 players.
 """
+import board
+import player
 
-def move(board : Board, player : Player, station : StationNumber):
+def move(board : board, player : player, station : int):
     if station not in board.stations:
         raise ValueError(f"Station {station} does not exist on the board.")
     if station == player.position:

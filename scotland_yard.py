@@ -6,11 +6,11 @@ which combines all elements to represent Scotland Yard games.
 
 class Game:
 
-    def __init__(self,board : Board) -> None:
+    def __init__(self,board : Board, players : list[str]) -> None:
         self.board = board
-        pass
-
+        self.players = players
 
 if __name__ == "__main__":
     # TODO
     pass
+
